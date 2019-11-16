@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container-iscritto, #container-non-iscritto {
+    display: none;
+}
+
+#container-iscritto.visible, #container-non-iscritto.visible {
+    display: block;
+}
