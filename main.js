@@ -10,16 +10,11 @@ console.log (iscritti);
 var mail = prompt ("Scrivi la tua mail");
 console.log (mail);
 
-// CICLO FOR per verificare che l'utente sia inserito nell'elenco di emails
-for (var i = 0; i < iscritti.length; i++) {
 
-    if (mail === iscritti[i]) {
-        // se è iscritto
-        console.log ("ci sei");
-        //document.getElementById ("container-iscritto").setAttribute ("class", "visible");
-    } else {
-        //se non è iscritto
-        console.log ("non ci sei");
-        //document.getElementById ("container-non-iscritto").setAttribute ("class", "visible");
-    }
+// CICLO FOR per verificare che l'utente sia inserito nell'elenco di emails
+for (var i = 0; i < iscritti.length; i++)
+
+if (mail === iscritti[i]) {
+    // l'utente è iscritto
+    document.getElementById ("container-iscritto").setAttribute ("class", "visible")
 }

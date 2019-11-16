@@ -4,10 +4,54 @@
     box-sizing: border-box;
 }
 
-#container-iscritto, #container-non-iscritto {
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #9e4268, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-iscritto {
     display: none;
 }
 
-#container-iscritto.visible, #container-non-iscritto.visible {
+#container-iscritto.visible {
     display: block;
+}
+
+#iscritto {
+    font-size: 60px;
+    font-weight: 900;
+    color: white;
+}
+
+#container-iscritto p {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+    margin: 100px auto 30px auto;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container button {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 60px;
+    border: 0;
+    border-radius: 5px;
+    background-color: white;
+    color: #9e4268;
+    cursor: pointer;
 }
