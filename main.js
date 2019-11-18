@@ -6,13 +6,14 @@ console.log (iscritti);
 var mail = prompt ("Scrivi la tua mail");
 console.log (mail);
 
+var mailEsistente = false;
 
 // CICLO FOR per verificare che l'utente sia inserito nell'elenco di emails
 for (var i = 0; i < iscritti.length; i++) {
     if (mail === iscritti[i]) {
         // l'utente è iscritto
         document.getElementById ("container-iscritto").setAttribute ("class", "visible")
-        var mailEsistente = vero;
+        var mailEsistente = true;
     }
 }
 
